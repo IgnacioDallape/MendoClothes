@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="shortcut icon" href="./img/LOGOTIPO .jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Rajdhani&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="grid__formulario">
+        <header class="header__opacidad" >
+            <span class="imagen-contenedor " ><a href="#" > <img src="../img/logo/LOGOTIPO LETRA 1.png" alt="LOGO MC"  class="imagen-logo"></a>
+            </span>
+            <nav class="header__contenedor-botones">
+            <button class="header__botones"><a href="../index.html" class="color_boton">Inicio</a></button> 
+            <button class="header__botones"> <a href="./remeras.html" class="color_boton">Remeras</a></button>
+            <button class="header__botones"> <a href="./jeans.html" class="color_boton">Jeans</a></button>
+            <button class="header__botones"><a href="#" class="color_boton">Formulario de Contacto</a></button>
+            <button class="header__botones"><a href="./ayuda.html" class="color_boton">Ayuda</a></button>
+            </nav>
+            <h2 class="header__tituloprincipal">FORMULARIO PARA CONTACTARTE!</h2>
+        </header >
+    
+    
+    <main>
+
+        <div class="main__formulario">
+            <form action="#" method="get" enctype="text/plain"></form>
+            <fieldset class="main__formulario__fieldset">
+            <ul>
+                <form action="" method="get" enctype="text/plain">
+
+                <li class="main__formulario__cuestionario">
+                <label for="name">Nombre Y Apellido</label>
+                <input  class="main__formulario__cuestionario__input" type="text" name="name" id="nombre" required placeholder="introduzca su nombre">
+                </li> 
+                
+                <li class="main__formulario__cuestionario">
+                <label for="email">Email</label>
+                <input class="main__formulario__cuestionario__input" type="email" name="email" id="email" required placeholder="introduzca su email">
+                </li>
+
+                <li class="main__formulario__cuestionario">            
+                <label for="age">Edad</label>
+                <input  class="main__formulario__cuestionario__input" type="number" name="age" id="age" min="1" max="100"  step="1" required placeholder="introduzca su edad"> 
+                </li>
+
+                <li class="main__formulario__cuestionario">
+                <label for="date">Fecha de nacimiento</label>
+                <input type="date" name="date" id="name">
+                </li>
+        
+
+                <li class="main__formulario__cuestionario">            
+                <label for="ubication">Provincia!</label>
+                <input class="main__formulario__cuestionario__input"  type="text" name="ubication" id="ubication" required placeholder="introduzca su Provincia"> 
+                </li>
+
+                <div class="main__formulario__cuestionario__sexo">
+                <span class="main__formulario__span">Sexo</span>
+                </div>
+                
+                <ul >
+                <div class="main__formulario__cuestionario">
+                <label for="male">masculino    </label>
+                <input type="radio" name="gender" id="male" value="male">
+                </div>
+                </ul >
+                <div class="main__formulario__cuestionario">
+                <label for="female">femenino</label>
+                <input type="radio" name="gender" id="female" value="female"> 
+                </div>
+                    
+            </ul>
+                <hr>
+                <input type="reset" value="reiniciar formulario" class="main__formulario__cuestionario__reiniciar">
+                <input type="submit" value="enviar formulario" class="main__formulario__cuestionario__enviar">
+            
+            </form>
+    
+        </div>
+
+    </main>
+ 
+    <footer class="footer">
+        
+        <h3 class="main__contacto">Contactate con nosotros!</h3>
+        <h4 class="main__contacto"> Email: MendoClothes@gmail.com</h4>
+        <h4 class="main__contacto">Telefono: 2615202818</h4>
+
+    </footer>
+
+    </div>
+</body>
+
+</html>

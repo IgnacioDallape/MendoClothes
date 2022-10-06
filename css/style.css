@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+} 
+/*
+.root{
+    font-size: 20px; 
+}
+/*CLASES UTILITARIAS, se repiten mucho*/
+.btn{
+    color: tomato
+}
+
+.inline{
+    display: inline;
+}
+
+/* FIN CLASES UTILITARIAS */ 
+
+
+
+body{
+    background-image: linear-gradient(to left, rgb(252, 219, 219), rgb(152, 90, 14));
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:"header header"
+                        "main article"
+                        "footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+article{
+    grid-area: article;
+}
+footer{
+    grid-area: footer;
+}
+
+
+.header__opacidad{
+    background-color: rgb(232, 216, 216);
+    opacity: 0.7;
+}
+
+.imagen-contenedor {
+    display: grid;
+    grid-template-rows: 10rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagen-logo {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 50%;
+}
+
+
+.header__contenedor-botones {
+    padding: 2rem 1rem 1rem 1rem;
+    display: flex;
+    position: relative;
+    max-height: 62%;
+    gap: 0.5rem;
+    height: 5rem;
+}
+
+.header__botones{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 3rem 0rem 3rem;
+    border: solid 2px ;
+    background-image: linear-gradient(to left, rgb(215, 179, 135), rgb(224, 176, 176)) ;
+}
+
+.color_boton{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+}
+
+/* MAIN */
+
+
+.main_titulos{
+    width: 100%;
+    height: 3rem;
+    font-family: cursive;
+
+    
+}
+
+.main__titulospagina{
+    display: inline;
+    justify-content: left;
+    padding: 0.06rem;
+    background-image: linear-gradient(to left, rgb(204, 149, 81), rgb(224, 176, 176))
+}
+
+.main__textocomollegar {
+    display: inline;
+    height: 9rem;
+    width: 35rem;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to left, rgb(204, 149, 81), rgb(214, 195, 195));
+    position: relative;
+    left: 38rem;
+    font-family: cursive;
+
+}
+
+.main__textoquienessomos {
+    display: flex;
+    height: 9rem;
+    width: 35rem;
+    font-size: 1.2rem;
+    background-color: rgb(251, 195, 195);
+    flex-direction: column;
+    background-image: linear-gradient(to left, rgb(252, 219, 219), rgb(152, 90, 14));
+    font-family: cursive;
+
+    
+}
+.main__video{
+display: flex;
+}
+
+.main__video__contenedor{
+    display: flex;
+    padding: 2rem 0rem 0rem 0rem;
+    justify-content: flex-start;
+    max-width: 30rem;
+}
+
+.main__mapa{
+    display: flex;
+
+}
+
+.article__titulospagina{
+    display: flex;
+}
+
+.article__integrantes{
+    display: flex;
+
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: rgb(232, 216, 216);
+        opacity: 0.7;
+
+}
+
+.footer__botones{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.footer__disenoboton{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+    width: 100%;
+    padding: 0.5rem 3rem 0rem 3rem;
+    border: solid 2px;
+    background-image: linear-gradient(to left, rgb(215, 179, 135), rgb(224, 176, 176));
+
+
+}
+
+.footer__color__boton{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+}
+
+
+
+/* REMERAS */
+
+.grid__remeras{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:"header header"
+                        "main main"
+                        "footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+ .main__remera1{
+    max-width: 20rem;
+    max-height: 20rem;
+    
+    
+ }
+
+ .main__remera2{
+    max-width: 20rem;
+    max-height: 20rem;
+    
+ }
+
+ .main__remera3{
+    max-width: 20rem;
+    max-height: 20rem;
+    
+ }
+
+
+ /* JEANS */
+
+.grid__jeans{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:"header header"
+                        "main main"
+                        "footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+
+/* FORMULARIO */
+
+.grid__formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:"header header"
+                        "main main"
+                        "footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+.main__formulario{
+    padding: 0.5rem;
+    position: relative;
+}
+
+.main__formulario__fieldset{
+    padding: 0rem 1rem 1rem 2rem;
+}
+
+.main__formulario__cuestionario{
+    font-family: cursive;
+}
+
+.main__formulario__cuestionario__sexo{
+    position: relative;
+    left: 1.3rem;
+    font-family: cursive;
+    
+}
+main__formulario__span{
+    position: relative;
+}
+
+.main__formulario__cuestionario__reiniciar{
+    font-family: cursive;
+}
+
+.main__formulario__cuestionario__enviar{
+    font-family: cursive;
+}
+/* AYUDA */
+
+.grid__ayuda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:"header header"
+                        "main main"
+                        "footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
