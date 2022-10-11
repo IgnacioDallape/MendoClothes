@@ -106,11 +106,13 @@ footer{
     
 }
 
-.main__titulospagina{
+.main__titulospagina {
     display: inline;
     justify-content: left;
     padding: 0.06rem;
-    background-image: linear-gradient(to left, rgb(86, 83, 80), rgb(255, 255, 255))
+    background-image: linear-gradient(to left, rgb(86, 83, 80), rgb(255, 255, 255));
+    position: relative;
+    left: 3rem;
 }
 
 .main__textoquienessomos {
@@ -120,15 +122,17 @@ footer{
     font-size: 1.2rem;
     background-color: rgb(251, 195, 195);
     flex-direction: column;
-    background-image: linear-gradient(to left, rgb(79, 70, 70), rgb(255, 255, 255), rgb(255, 255, 255));
+    background-image: linear-gradient(to left, rgb(169, 155, 155), rgb(255, 255, 255), rgb(255, 255, 255));
     font-family: cursive;
-
-    
+    position: relative;
+    left: 3rem;
 }
 
-.main__imagen{
+.main__imagen {
     padding-top: 1rem;
     width: 35rem;
+    position: relative;
+    left: 3rem;
 }
 
 
@@ -141,7 +145,8 @@ footer{
     background-image: linear-gradient(to left, rgb(79, 70, 70), rgb(255, 255, 255), rgb(255, 255, 255));
     font-family: cursive;
     border: solid black 1px;
-    justify-content: center;
+    position: relative;
+    left: 15rem;
 }
 .article__textocomollegar {
     display: flex;
@@ -153,7 +158,7 @@ footer{
     justify-content: center;
     position: relative;
     top: 15rem;
-    left: 2rem;
+    left: 15rem;
 }
 
 .article__video__contenedor{
@@ -161,6 +166,8 @@ footer{
     padding: 2rem 0rem 0rem 0rem;
     justify-content: flex-start;
     max-width: 30rem;
+    position: relative;
+    left: 15rem;
 }
 .article__video{
     display: flex;
@@ -173,6 +180,8 @@ footer{
     padding: 2rem 2rem 2.5rem 2rem;
     position: relative;
     top: 14rem;
+    left: 12rem;
+    max-width: 35rem;
 }
 
 .article__integrantes__contenedor{
@@ -182,27 +191,30 @@ footer{
     background-size: cover;
     position: relative;
     top: 7rem;
+    max-width: 25rem;
+    left: 15rem;
 }
 .article__mapa{
     display: flex;
 
 }
-.article__titulospagina{
+.article__titulospagina {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     padding: 1rem 1rem 1rem 0.3rem;
-}
-
-.article__integrantes__foto {
-    display: flex;
-    max-width: 12rem;
-    padding: 1rem 1rem 1rem 1rem;;
-
     
 }
 
-.article__integrantes__texto{
+.article__integrantes__foto {
+    max-width: 12rem;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+    left: 6.5rem;
+}
+
+.article__integrantes__texto {
     display: flex;
+    justify-content: space-around;
 }
 
 
@@ -318,7 +330,6 @@ footer{
     grid-template-areas:"header header"
                         "main main"
                         "footer footer";
-    background-image: linear-gradient(to left, black, white);
 }
 header{
     grid-area: header;
@@ -333,6 +344,8 @@ footer{
 .main__formulario{
     padding: 0.5rem;
     position: relative;
+    background-image: linear-gradient(to left, rgb(68, 65, 65), rgb(236, 236, 236));
+
 }
 
 .main__formulario__fieldset{
