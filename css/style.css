@@ -21,13 +21,16 @@
 
 
 body{
-    background-image: linear-gradient(to left, rgb(252, 219, 219), rgb(152, 90, 14));
+    background-image: url(../img/fondo/ropa-fondo-2.jpg);
+    background-attachment:fixed;
+    background-size: contain;
 }
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 0.28fr 1fr 0.1fr;
     grid-template-areas:"header header"
+                        "main article"
                         "main article"
                         "footer footer";
 }
@@ -46,8 +49,9 @@ footer{
 
 
 .header__opacidad{
-    background-color: rgb(232, 216, 216);
-    opacity: 0.7;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.9;
+    max-height: 15rem;
 }
 
 .imagen-contenedor {
@@ -81,7 +85,7 @@ footer{
     width: 100%;
     padding: 0rem 3rem 0rem 3rem;
     border: solid 2px ;
-    background-image: linear-gradient(to left, rgb(215, 179, 135), rgb(224, 176, 176)) ;
+    background-image: linear-gradient(to left, rgb(116, 111, 105), rgb(255, 255, 255)) ;
 }
 
 .color_boton{
@@ -94,7 +98,7 @@ footer{
 /* MAIN */
 
 
-.main_titulos{
+.main__titulos{
     width: 100%;
     height: 3rem;
     font-family: cursive;
@@ -106,19 +110,7 @@ footer{
     display: inline;
     justify-content: left;
     padding: 0.06rem;
-    background-image: linear-gradient(to left, rgb(204, 149, 81), rgb(224, 176, 176))
-}
-
-.main__textocomollegar {
-    display: inline;
-    height: 9rem;
-    width: 35rem;
-    font-size: 1.2rem;
-    background-image: linear-gradient(to left, rgb(204, 149, 81), rgb(214, 195, 195));
-    position: relative;
-    left: 38rem;
-    font-family: cursive;
-
+    background-image: linear-gradient(to left, rgb(86, 83, 80), rgb(255, 255, 255))
 }
 
 .main__textoquienessomos {
@@ -128,42 +120,104 @@ footer{
     font-size: 1.2rem;
     background-color: rgb(251, 195, 195);
     flex-direction: column;
-    background-image: linear-gradient(to left, rgb(252, 219, 219), rgb(152, 90, 14));
+    background-image: linear-gradient(to left, rgb(79, 70, 70), rgb(255, 255, 255), rgb(255, 255, 255));
     font-family: cursive;
 
     
 }
-.main__video{
-display: flex;
+
+.main__imagen{
+    padding-top: 1rem;
+    width: 35rem;
 }
 
-.main__video__contenedor{
+
+
+/* ARTICLE */
+.article__texto__nospresentamos {
+    display: flex;
+    font-size: 1.2rem;
+    max-width: 12rem;
+    background-image: linear-gradient(to left, rgb(79, 70, 70), rgb(255, 255, 255), rgb(255, 255, 255));
+    font-family: cursive;
+    border: solid black 1px;
+    justify-content: center;
+}
+.article__textocomollegar {
+    display: flex;
+    max-width: 12rem;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to left, rgb(79, 70, 70), rgb(255, 255, 255), rgb(255, 255, 255));
+    font-family: cursive;
+    border: solid black 1px;
+    justify-content: center;
+    position: relative;
+    top: 15rem;
+    left: 2rem;
+}
+
+.article__video__contenedor{
     display: flex;
     padding: 2rem 0rem 0rem 0rem;
     justify-content: flex-start;
     max-width: 30rem;
 }
+.article__video{
+    display: flex;
+}
 
-.main__mapa{
+.article__mapa__orientacion {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem 2rem 2.5rem 2rem;
+    position: relative;
+    top: 14rem;
+}
+
+.article__integrantes__contenedor{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/fondo/fondo_texto_integrantes.jpg);
+    background-size: cover;
+    position: relative;
+    top: 7rem;
+}
+.article__mapa{
     display: flex;
 
 }
-
 .article__titulospagina{
     display: flex;
+    justify-content: flex-start;
+    padding: 1rem 1rem 1rem 0.3rem;
 }
 
-.article__integrantes{
+.article__integrantes__foto {
     display: flex;
+    max-width: 12rem;
+    padding: 1rem 1rem 1rem 1rem;;
 
+    
 }
+
+.article__integrantes__texto{
+    display: flex;
+}
+
+
+
+
+
 
 /* FOOTER */
 
-.footer{
+.footer {
     background-color: rgb(232, 216, 216);
-        opacity: 0.7;
-
+    position: relative;
+    opacity: 0.8;
+    max-height: 10rem;
+    top: 12rem;
 }
 
 .footer__botones{
@@ -264,6 +318,7 @@ footer{
     grid-template-areas:"header header"
                         "main main"
                         "footer footer";
+    background-image: linear-gradient(to left, black, white);
 }
 header{
     grid-area: header;
