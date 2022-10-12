@@ -280,25 +280,17 @@ footer{
     grid-area: footer;
 }
 
- .main__remera1{
+ .main__remera{
     max-width: 20rem;
     max-height: 20rem;
-    
-    
+    padding: 2rem 2rem 5rem 2rem;
+    background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);  
  }
 
- .main__remera2{
-    max-width: 20rem;
-    max-height: 20rem;
+.centrada{
+    display: flex;
     
- }
-
- .main__remera3{
-    max-width: 20rem;
-    max-height: 20rem;
-    
- }
-
+}
 
  /* JEANS */
 
@@ -320,6 +312,12 @@ footer{
     grid-area: footer;
 }
 
+.main__jeans__imagenes{
+    max-width: 20rem;
+    max-height: 20rem;
+    padding: 2rem 2rem 5rem 2rem;
+    background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);    
+}
 
 /* FORMULARIO */
 
@@ -383,12 +381,30 @@ main__formulario__span{
                         "main main"
                         "footer footer";
 }
-header{
-    grid-area: header;
+
+
+.zapatillas__boton1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 35rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-image: linear-gradient(to left, rgb(172, 161, 161),white);
+    border: solid rgb(96, 82, 82) 3px;
 }
-main{
-    grid-area: main;
+
+.zapatillas__boton2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 35rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-image: linear-gradient(to left, rgb(172, 161, 161),white);
+    border: solid rgb(96, 82, 82) 3px;
 }
-footer{
-    grid-area: footer;
+
+
+.zapatillas__contenedorimagen{
+    display: flex;
+    justify-content: center;
 }
