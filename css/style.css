@@ -8,6 +8,8 @@
     font-size: 20px; 
 }
 /*CLASES UTILITARIAS, se repiten mucho*/
+
+
 .btn{
     color: tomato
 }
@@ -15,6 +17,7 @@
 .inline{
     display: inline;
 }
+
 
 /* FIN CLASES UTILITARIAS */ 
 
@@ -138,6 +141,8 @@ footer{
 
 
 /* ARTICLE */
+
+
 .article__texto__nospresentamos {
     display: flex;
     font-size: 1.2rem;
@@ -218,11 +223,8 @@ footer{
 }
 
 
-
-
-
-
 /* FOOTER */
+
 
 .footer {
     background-color: rgb(232, 216, 216);
@@ -262,10 +264,11 @@ footer{
 
 /* REMERAS */
 
-.grid__remeras{
+
+.grid__remeras {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 3fr 1fr;
     grid-template-areas:"header header"
                         "main main"
                         "footer footer";
@@ -292,7 +295,9 @@ footer{
     
 }
 
+
  /* JEANS */
+
 
 .grid__jeans{
     display: grid;
@@ -318,6 +323,71 @@ footer{
     padding: 2rem 2rem 5rem 2rem;
     background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);    
 }
+
+
+/* ZAPATILLAS */
+
+
+.grid__zapatillas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 0.5fr;
+    grid-template-areas:"header header"
+                        "main main"
+                        "footer footer";
+}
+
+
+.zapatillas__boton1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 35rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-image: linear-gradient(to left, rgb(172, 161, 161),white);
+    border: solid rgb(96, 82, 82) 3px;
+}
+
+.zapatillas__boton2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 35rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-image: linear-gradient(to left, rgb(172, 161, 161),white);
+    border: solid rgb(96, 82, 82) 3px;
+}
+
+
+.zapatillas__contenedorimagen{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*  JORDANS  */
+
+
+
+
+/*  VANS  */
+
+.main__zapatillas{
+    
+}
+
+.vans__tamañocontenedor{
+    display: inline;
+    max-width: 20rem;
+    max-height: 27rem;
+}
+
+.vans__tamañoimagen{
+    height: 25rem;
+    width: 20rem;
+}
+
+
 
 /* FORMULARIO */
 
@@ -370,41 +440,4 @@ main__formulario__span{
 
 .main__formulario__cuestionario__enviar{
     font-family: cursive;
-}
-/* AYUDA */
-
-.grid__ayuda{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
-    grid-template-areas:"header header"
-                        "main main"
-                        "footer footer";
-}
-
-
-.zapatillas__boton1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 35rem;
-    padding: 1rem 1rem 1rem 1rem;
-    background-image: linear-gradient(to left, rgb(172, 161, 161),white);
-    border: solid rgb(96, 82, 82) 3px;
-}
-
-.zapatillas__boton2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 35rem;
-    padding: 1rem 1rem 1rem 1rem;
-    background-image: linear-gradient(to left, rgb(172, 161, 161),white);
-    border: solid rgb(96, 82, 82) 3px;
-}
-
-
-.zapatillas__contenedorimagen{
-    display: flex;
-    justify-content: center;
 }
