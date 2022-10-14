@@ -19,6 +19,7 @@
 }
 
 
+
 /* FIN CLASES UTILITARIAS */ 
 
 
@@ -366,14 +367,37 @@ footer{
 
 
 /*  JORDANS  */
+.grid__vans-y-jordans{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 0.3fr;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+}
 
+.jordans__tamañocontenedor{
+    display: inline;
+    max-width: 20rem;
+    max-height: 27rem;
+}
 
-
+.jordans__tamañoimagen{
+    height: 14rem;
+    width: 14rem;
+    display: flex;
+    padding-top: 1rem;   
+}
 
 /*  VANS  */
 
-.main__zapatillas{
-    
+.grid__vans-y-jordans{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 0.3fr;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
 }
 
 .vans__tamañocontenedor{
@@ -383,8 +407,10 @@ footer{
 }
 
 .vans__tamañoimagen{
-    height: 25rem;
-    width: 20rem;
+    height: 14rem;
+    width: 14rem;
+    display: flex;
+    padding-top: 1rem;
 }
 
 
@@ -394,7 +420,7 @@ footer{
 .grid__formulario{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
     grid-template-areas:"header header"
                         "main main"
                         "footer footer";
@@ -409,11 +435,14 @@ footer{
     grid-area: footer;
 }
 
-.main__formulario{
-    padding: 0.5rem;
+.main__contacto__tituloprincipal{
+    background-image: linear-gradient(to left, rgb(68, 65, 65), rgb(236, 236, 236));    
+}
+
+.main__formulario {
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
     position: relative;
     background-image: linear-gradient(to left, rgb(68, 65, 65), rgb(236, 236, 236));
-
 }
 
 .main__formulario__fieldset{
@@ -440,4 +469,46 @@ main__formulario__span{
 
 .main__formulario__cuestionario__enviar{
     font-family: cursive;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .header__opacidad {
+        background-color: rgb(255, 255, 255);
+        opacity: 0.9;
+        max-height: 17rem;
+    }
+
+    .imagen-logo {
+        max-width: 70%;
+        max-height: 30%;
+        position: relative;
+        left: 0.3rem;
+        bottom: 0.5rem;
+    }
+    .imagen-contenedor {
+        display: grid;
+        grid-template-rows: 5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__contenedor-botones {
+        padding: 2rem 1rem 1rem 1rem;
+        display: flex;
+        position: relative;
+        /* max-height: 62%; */
+        gap: 0.5rem;
+        /* height: 5rem; */
+        flex-wrap: wrap;
+        width: 18rem;
+    }
+    .main__titulospagina {
+        display: inline;
+        justify-content: left;
+        padding: 0.06rem;
+        background-image: linear-gradient(to left, rgb(86, 83, 80), rgb(255, 255, 255));
+    }
 }
