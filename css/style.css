@@ -476,6 +476,22 @@ main__formulario__span{
 
 @media (max-width: 768px) {
 
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.34fr 0.68fr 0.1fr;
+        grid-template-areas: "header"
+                "main"
+                "article"
+                "footer";
+    }
+    .header__opacidad {
+        background-color: rgb(255, 255, 255);
+        opacity: 0.9;
+        max-height: 17rem;
+        max-width: 18rem;
+    }
+
     .header__opacidad {
         background-color: rgb(255, 255, 255);
         opacity: 0.9;
@@ -510,5 +526,90 @@ main__formulario__span{
         justify-content: left;
         padding: 0.06rem;
         background-image: linear-gradient(to left, rgb(86, 83, 80), rgb(255, 255, 255));
+        /* position: relative; */
+        /* left: 3rem; */
+    }
+    .main__textoquienessomos {
+        display: flex;
+        height: 19rem;
+        width: 14rem;
+        font-size: 1.2rem;
+        background-color: rgb(251, 195, 195);
+        flex-direction: column;
+        background-image: linear-gradient(to left, rgb(169, 155, 155), rgb(255, 255, 255), rgb(255, 255, 255));
+        font-family: cursive;
+        position: relative;
+        left: 2rem;
+    }
+    .main__imagen {
+        padding-top: 1rem;
+        width: 15rem;
+        position: relative;
+        left: 1.5rem;
+    }
+    .article__texto__nospresentamos {
+        display: flex;
+        font-size: 1.2rem;
+        max-width: 12rem;
+        background-image: linear-gradient(to left, rgb(79, 70, 70), rgb(255, 255, 255), rgb(255, 255, 255));
+        font-family: cursive;
+        border: solid black 1px;
+        position: relative;
+        left: 3.3rem;
+    }
+    .article__video__contenedor {
+        display: flex;
+        padding: 2rem 0rem 0rem;
+        max-width: 18rem;
+        max-height: 30rem;
+        position: inherit;
+        height: 20rem;
+    }
+    .article__integrantes__contenedor {
+        display: flex;
+        flex-direction: column;
+        background-image: url(../img/fondo/fondo_texto_integrantes.jpg);
+        background-size: cover;
+        position: inherit;
+        top: 7rem;
+        max-width: 22rem;
+        padding-top: rem;
+        
+    }
+    .article__integrantes__foto {
+        max-width: 12rem;
+        padding: 1rem 1rem 1rem 1rem;
+        position: relative;
+        left: 4.5rem;
+    }
+    .article__textocomollegar {
+        /* display: flex; */
+        max-width: 12rem;
+        font-size: 1.2rem;
+        background-image: linear-gradient(to left, rgb(79, 70, 70), rgb(255, 255, 255), rgb(255, 255, 255));
+        font-family: cursive;
+        border: solid black 1px;
+        /* justify-content: center; */
+        position: relative;
+        top: 3rem;
+        left: 3rem;
+    }
+    .article__mapa__orientacion {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem 2rem 2.5rem 2rem;
+        position: relative;
+        top: 4rem;
+        left: 0rem;
+        max-width: 17rem;
+        max-height: 18rem;
+    }
+    .footer {
+        background-color: rgb(232, 216, 216);
+        position: relative;
+        opacity: 0.8;
+        max-height: 6rem;
+        top: 12rem;
     }
 }
