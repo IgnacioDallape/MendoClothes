@@ -18,6 +18,9 @@
     display: inline;
 }
 
+.border{
+    border: black 1px solid;
+}
 
 
 /* FIN CLASES UTILITARIAS */ 
@@ -269,9 +272,9 @@ footer{
 .grid__remeras {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 3fr 1fr;
+    grid-template-rows: 0.3fr 4fr 0.3fr;
     grid-template-areas:"header header"
-                        "main main"
+                        "main article"
                         "footer footer";
 }
 header{
@@ -280,21 +283,101 @@ header{
 main{
     grid-area: main;
 }
+article{
+    grid-area: article;
+}
 footer{
     grid-area: footer;
 }
 
- .main__remera{
-    max-width: 20rem;
-    max-height: 20rem;
-    padding: 2rem 2rem 5rem 2rem;
-    background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);  
- }
-
-.centrada{
+.main__remera__contenedor {
+    border: 4rem solid transparent;
     display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 2rem;
 }
+
+ .main__remera {
+    background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);
+    width: 18rem;
+    height: 30rem;
+    padding: 2rem 2rem 5rem 2rem;
+}
+.main__remera1{
+    position: relative;
+    right: 15rem;
+    top: 25rem;
+    font-family: cursive;
+}
+.main__remera2 {
+    position: relative;
+    right: 14rem;
+    top: 25rem;
+    font-family: cursive;
+}
+.main__remera3{
+    position: relative;
+    right: 14rem;
+    top: 25rem;
+    font-family: cursive;
+}
+.main__remera4{
+    position: relative;
+    right: 14rem;
+    top: 25rem;
+    font-family: cursive;
+}
+.main__remera5{
+    position: relative;
+    right: 14rem;
+    top: 25rem;
+    font-family: cursive;
+}
+.main__remera6{
+    position: relative;
+    right: 14rem;
+    top: 25rem;
+    font-family: cursive;
+}
+
+.article__remera1 {
+    position: relative;
+    right: 14rem;
+    top: 25rem;
+    font-family: cursive;
+}
+.article__remera2 {
+    position: relative;
+    right: 14rem;
+    top: 25rem;
+    font-family: cursive;
+}
+.article__remera3 {
+    position: relative;
+    right: 14rem;
+    top: 25rem;
+    font-family: cursive;
+}
+.article__remera4 {
+    position: relative;
+    right: 14rem;
+    top: 25rem;
+    font-family: cursive;
+}
+.article__remera5 {
+    position: relative;
+    right: 14rem;
+    top: 25rem;
+    font-family: cursive;
+}
+.article__remera6 {
+    position: relative;
+    right: 14rem;
+    top: 25rem;
+    font-family: cursive;
+}
+
 
 
  /* JEANS */
