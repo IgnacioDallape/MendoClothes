@@ -109,7 +109,7 @@ footer{
     width: 100%;
     height: 3rem;
     font-family: cursive;
-
+    padding: 0rem 0rem 2rem 0rem;
     
 }
 
@@ -136,12 +136,15 @@ footer{
 }
 
 .main__imagen {
-    padding-top: 1rem;
     width: 35rem;
     position: relative;
     left: 3rem;
+    border: solid black 2px;
 }
 
+.main__fondo{
+    padding: 0rem 0rem 10rem 0rem;
+}
 
 
 /* ARTICLE */
@@ -234,8 +237,8 @@ footer{
     background-color: rgb(232, 216, 216);
     position: relative;
     opacity: 0.8;
-    max-height: 10rem;
-    top: 12rem;
+    max-height: 5rem;
+    top: 21rem;
 }
 
 .footer__botones{
@@ -271,11 +274,11 @@ footer{
 
 .grid__remeras {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 4fr 0.3fr;
-    grid-template-areas:"header header"
-                        "main article"
-                        "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 4fr 180px;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
 }
 header{
     grid-area: header;
@@ -293,103 +296,77 @@ footer{
 .main__remera__contenedor {
     border: 4rem solid transparent;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 2rem;
+    column-gap: 1rem;
 }
 
- .main__remera {
+.main__remera {
     background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);
     width: 18rem;
     height: 30rem;
-    padding: 2rem 2rem 5rem 2rem;
+    padding: 0.3rem 0.3rem 4rem 0.3rem;
+    border: black solid 2px;
 }
 .main__remera1{
     position: relative;
-    right: 15rem;
-    top: 25rem;
+    right: 13rem;
+    top: 26.5rem;
     font-family: cursive;
 }
 .main__remera2 {
     position: relative;
-    right: 14rem;
-    top: 25rem;
+    right: 13rem;
+    top: 26.5rem;
     font-family: cursive;
 }
 .main__remera3{
     position: relative;
-    right: 14rem;
-    top: 25rem;
+    right: 13rem;
+    top: 26.5rem;
     font-family: cursive;
 }
 .main__remera4{
     position: relative;
-    right: 14rem;
-    top: 25rem;
+    right: 13rem;
+    top: 25.8rem;
     font-family: cursive;
 }
 .main__remera5{
     position: relative;
-    right: 14rem;
-    top: 25rem;
+    right: 13rem;
+    top: 25.8rem;
     font-family: cursive;
 }
 .main__remera6{
     position: relative;
-    right: 14rem;
-    top: 25rem;
+    right: 13rem;
+    top: 25.8rem;
     font-family: cursive;
 }
 
-.article__remera1 {
+.article__remera{
     position: relative;
-    right: 14rem;
-    top: 25rem;
+    right: 13rem;
+    top: 25.8rem;
     font-family: cursive;
 }
-.article__remera2 {
-    position: relative;
-    right: 14rem;
-    top: 25rem;
-    font-family: cursive;
-}
-.article__remera3 {
-    position: relative;
-    right: 14rem;
-    top: 25rem;
-    font-family: cursive;
-}
-.article__remera4 {
-    position: relative;
-    right: 14rem;
-    top: 25rem;
-    font-family: cursive;
-}
-.article__remera5 {
-    position: relative;
-    right: 14rem;
-    top: 25rem;
-    font-family: cursive;
-}
-.article__remera6 {
-    position: relative;
-    right: 14rem;
-    top: 25rem;
-    font-family: cursive;
-}
+
 
 
 
  /* JEANS */
 
 
-.grid__jeans{
+.grid__jeans {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
-    grid-template-areas:"header header"
-                        "main main"
-                        "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 302px 106rem 181px;
+    grid-template-areas: "header "
+        "main "
+        "footer ";
 }
 header{
     grid-area: header;
@@ -400,74 +377,108 @@ main{
 footer{
     grid-area: footer;
 }
+.main__jeans {
+    border: 4rem solid transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    /* position: relative; */
+    /* bottom: 6.1rem; */
+}
+.main__jeans__contenedor {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* position: relative; */
+    /* bottom: 10rem; */
+    max-height: 640px;
+}
 
-.main__jeans__imagenes{
-    max-width: 20rem;
-    max-height: 20rem;
-    padding: 2rem 2rem 5rem 2rem;
-    background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);    
+.main__jeans__imagenes {
+    background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);
+    width: 22rem;
+    height: 32rem;
+    max-width: 22rem;
+    max-height: 32rem;
+    padding: 0.2rem 0.3rem 5rem 0.3rem;
+    border: solid black 2px;
+}
+
+.main__jeans__precio {
+    position: relative;
+    right: 14rem;
+    top: 27.5rem;
+    font-family: cursive;
 }
 
 
 /* ZAPATILLAS */
 
 
-.grid__zapatillas{
+.grid__zapatillas {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 0.5fr;
-    grid-template-areas:"header header"
-                        "main main"
-                        "footer footer";
+    grid-template-rows: 19rem 3fr 0.5fr;
+    grid-template-areas: "header header"
+        "main article"
+        "footer footer";
 }
 
 
-.zapatillas__boton1{
+.zapatillas__boton1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 35rem;
+    width: 28.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-image: linear-gradient(to left, rgb(172, 161, 161),white);
+    border: solid rgb(96, 82, 82) 3px;
+    position: relative;
+    left: 14.15rem;
+}
+.zapatillas__boton2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 28.5rem;
     padding: 1rem 1rem 1rem 1rem;
     background-image: linear-gradient(to left, rgb(172, 161, 161),white);
     border: solid rgb(96, 82, 82) 3px;
 }
 
-.zapatillas__boton2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 35rem;
-    padding: 1rem 1rem 1rem 1rem;
-    background-image: linear-gradient(to left, rgb(172, 161, 161),white);
-    border: solid rgb(96, 82, 82) 3px;
-}
 
-
-.zapatillas__contenedorimagen{
+.zapatillas__contenedorimagen__jordans {
     display: flex;
     justify-content: center;
+    padding: 1rem 1rem 10rem 10rem;
 }
-
+.zapatillas__contenedorimagen__vans {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 19rem 0rem 0rem;
+}
 
 /*  JORDANS  */
-.grid__vans-y-jordans{
+.grid__vans-y-jordans {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 0.3fr;
-    grid-template-areas:"header"
-                        "main"
-                        "footer";
+    grid-template-rows: 301px 2fr 0.3fr;
+    grid-template-areas: "header"
+        "main"
+        "footer";
 }
 
 .jordans__tamañocontenedor{
     display: inline;
-    max-width: 20rem;
-    max-height: 27rem;
+    max-width: 30rem;
+    max-height: 37rem;
 }
 
 .jordans__tamañoimagen{
-    height: 14rem;
-    width: 14rem;
+    height: 24rem;
+    width: 24rem;
     display: flex;
     padding-top: 1rem;   
 }
