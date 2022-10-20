@@ -779,9 +779,8 @@ main__formulario__span{
         background-color: rgb(232, 216, 216);
         position: relative;
         opacity: 0.8;
-        /* max-height: 6rem; */
         top: 18rem;
-        /* max-width: fit-content; */
+
     }
 
 }
