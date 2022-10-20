@@ -73,8 +73,18 @@ footer{
     justify-content: center;
     max-width: 100%;
     max-height: 50%;
+    animation: aparecer 700ms  ease-in alternate ;
 }
-
+@keyframes aparecer {
+    0%{
+        position: relative;
+        right: 100rem;
+    }
+    100%{
+        position: relative;
+        right: 0rem;
+    }
+}
 
 .header__contenedor-botones {
     padding: 2rem 1rem 1rem 1rem;
@@ -94,13 +104,20 @@ footer{
     border: solid 2px ;
     background-image: linear-gradient(to left, rgb(116, 111, 105), rgb(255, 255, 255)) ;
 }
+.header__botones :hover{
+    color: rgb(72, 72, 175);
+    font-family:  'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}
 
-.color_boton{
+.color_boton {
     display: flex;
     text-decoration: none;
     color: black;
     font-family: cursive;
 }
+
+
 
 /* MAIN */
 
