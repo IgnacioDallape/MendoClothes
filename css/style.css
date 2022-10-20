@@ -585,12 +585,14 @@ main__formulario__span{
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+
+    /*  INDEX   */
 
     .grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.34fr 0.68fr 0.1fr;
+        grid-template-rows: 400px 0.5fr 1fr 125px;
         grid-template-areas: "header"
                 "main"
                 "article"
@@ -599,8 +601,6 @@ main__formulario__span{
     .header__opacidad {
         background-color: rgb(255, 255, 255);
         opacity: 0.9;
-        max-height: 17rem;
-        max-width: 18rem;
     }
 
     .header__opacidad {
@@ -610,10 +610,9 @@ main__formulario__span{
     }
 
     .imagen-logo {
-        max-width: 70%;
-        max-height: 30%;
+        /* max-width: 100%; */
+        /* max-height: 32%; */
         position: relative;
-        left: 2.5rem;
         bottom: 0.5rem;
     }
     .imagen-contenedor {
@@ -653,10 +652,11 @@ main__formulario__span{
         left: 2rem;
     }
     .main__imagen {
-        padding-top: 1rem;
+        padding-bottom: 0rem;
         width: 15rem;
         position: relative;
         left: 1.5rem;
+        bottom: 4rem;
     }
     .article__texto__nospresentamos {
         display: flex;
@@ -723,164 +723,67 @@ main__formulario__span{
         max-height: 6rem;
         top: 12rem;
     }
-}
 
-@media (max-width: 1079px) {
+    /*  JEANS   */
 
-    .grid {
+    .grid__jeans {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 294px 444px 1fr 0.1fr;
+        grid-template-rows: 336px 5fr 180px;
         grid-template-areas: "header"
                 "main"
-                "article"
                 "footer";
     }
+    
     .header__opacidad {
         background-color: rgb(255, 255, 255);
         opacity: 0.9;
-        height: 100%;
-        width: 100%;
+        max-width: fit-content;
+        /* max-height: 17rem; */
     }
-
-    .header__opacidad {
-        background-color: rgb(255, 255, 255);
-        opacity: 0.9;
-        max-height: 12rem;
-    }
-
-    .imagen-logo {
-        max-width: 70%;
-        max-height: 30%;
+    .imagen-contenedor{
         position: relative;
-        left: 10.5rem;
+        width: 18rem;
     }
-    .imagen-contenedor {
-        display: grid;
-        grid-template-rows: 5rem;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header__contenedor-botones {
-        padding: 2rem 1rem 1rem 1rem;
+    
+    .main__jeans {
+        border: 4rem solid transparent;
         display: flex;
-        position: relative;
-        /* max-height: 62%; */
-        gap: 0.5rem;
-        height: 7rem;
-        max-width: 14rem;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: row;
         flex-wrap: wrap;
-    }
-    .header__botones {
-        display: flex;
+        justify-content: center;
+        row-gap: 2rem;
+        column-gap: 1rem;
         position: relative;
-        align-items: center;
-        width: 100%;
-        padding: 0rem 3rem 0rem 3rem;
-        border: solid 2px;
-        background-image: linear-gradient(to left, rgb(116, 111, 105), rgb(255, 255, 255));
-        flex-direction: column;
+        /* bottom: 6.1rem; */
+        right: 4rem;
     }
-    .main__titulospagina {
-        display: inline;
-        justify-content: left;
-        padding: 0.06rem;
-        background-image: linear-gradient(to left, rgb(86, 83, 80), rgb(255, 255, 255));
-        position: relative;
-        bottom: 2rem;
-        left: 2rem;
-    }
-    .main__textoquienessomos {
-        display: flex;
-        height: 19rem;
-        width: 14rem;
-        font-size: 1.2rem;
-        background-color: rgb(251, 195, 195);
-        flex-direction: column;
-        background-image: linear-gradient(to left, rgb(169, 155, 155), rgb(255, 255, 255), rgb(255, 255, 255));
-        font-family: cursive;
-        position: relative;
-        left: 2rem;
-        bottom: 2rem;
-    }
-    .main__imagen__contenedor {
-        position: relative;
-        bottom: 21.5rem;
-        left: 19rem;
-    }
-    .main__imagen {
-        padding-top: 1rem;
-        width: 15rem;
-        position: relative;
-        left: 1.5rem;
-    }
-    .article__texto__nospresentamos {
-        display: flex;
-        font-size: 1.2rem;
-        max-width: 12rem;
-        background-image: linear-gradient(to left, rgb(79, 70, 70), rgb(255, 255, 255), rgb(255, 255, 255));
-        font-family: cursive;
-        border: solid black 1px;
-        position: relative;
-        left: 12.3rem;
-        padding: 0.1rem;
-    }
-    .article__video__contenedor {
-        /* display: flex; */
-        /* padding: 2rem 0rem 0rem 1rem; */
+
+    .main__jeans__imagenes {
+        background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);
+        width: 17.5rem;
+        height: 28rem;
         max-width: 23rem;
-        max-height: 30rem;
-        position: relative;
-        left: 7.5rem;
-        height: 20rem;
+        max-height: 29rem;
+        padding: 0.2rem 0.3rem 5rem 0.3rem;
+        border: solid black 2px;
     }
-    .article__integrantes__contenedor {
-        display: flex;
-        flex-direction: column;
-        background-image: url(../img/fondo/fondo_texto_integrantes.jpg);
-        background-size: cover;
+    .main__jeans__precio {
         position: relative;
-        top: 7rem;
-        max-width: 22rem;
-        top: 0rem;
-        left: 8rem;
-    }
-    .article__integrantes__foto {
-        max-width: 12rem;
-        padding: 1rem 1rem 1rem 1rem;
-        position: relative;
-        left: 4.5rem;
-    }
-    .article__textocomollegar {
-        /* display: flex; */
-        max-width: 12rem;
-        font-size: 1.2rem;
-        background-image: linear-gradient(to left, rgb(79, 70, 70), rgb(255, 255, 255), rgb(255, 255, 255));
+        right: 12rem;
+        top: 23.5rem;
         font-family: cursive;
-        border: solid black 1px;
-        /* justify-content: center; */
-        position: relative;
-        top: 3rem;
-        left: 13rem;
-    }
-    .article__mapa__orientacion {
-        position: relative;
-        display: flex;
-        justify-content: flex-start;
-        padding: 1rem 2rem 2.5rem 1.6rem;
-        position: relative;
-        top: 4rem;
-        left: 6rem;
-        max-width: 28rem;
-        max-height: 18rem;
+        width: 10rem;
     }
     .footer {
         background-color: rgb(232, 216, 216);
         position: relative;
         opacity: 0.8;
-        max-height: 6rem;
-        top: 12rem;
+        /* max-height: 6rem; */
+        top: 18rem;
+        /* max-width: fit-content; */
     }
+
 }
+
+
