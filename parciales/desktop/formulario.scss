@@ -1,0 +1,54 @@
+
+.grid__formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas:"header header"
+                        "main main"
+                        "footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+.main__contacto__tituloprincipal{
+    background-image: linear-gradient(to left, rgb(68, 65, 65), rgb(236, 236, 236));    
+}
+
+.main__formulario {
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
+    position: relative;
+    background-image: linear-gradient(to left, rgb(68, 65, 65), rgb(236, 236, 236));
+}
+
+.main__formulario__fieldset{
+    padding: 0rem 1rem 1rem 2rem;
+}
+
+.main__formulario__cuestionario{
+    font-family: cursive;
+}
+
+.main__formulario__cuestionario__sexo{
+    position: relative;
+    left: 1.3rem;
+    font-family: cursive;
+    
+}
+main__formulario__span{
+    position: relative;
+}
+
+.main__formulario__cuestionario__reiniciar{
+    font-family: cursive;
+}
+
+.main__formulario__cuestionario__enviar{
+    font-family: cursive;
+}

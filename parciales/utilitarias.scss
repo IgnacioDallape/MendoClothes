@@ -1,0 +1,47 @@
+
+
+.btn{
+    color: tomato
+}
+
+.inline{
+    display: inline;
+}
+
+.border{
+    border: black 1px solid;
+}
+
+
+/* FIN CLASES UTILITARIAS */ 
+
+
+
+body{
+    background-image: url(../img/fondo/ropa-fondo-2.jpg);
+    background-attachment:fixed;
+    background-size: contain;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.28fr 1fr 0.1fr;
+    grid-template-areas:"header header"
+                        "main article"
+                        "main article"
+                        "footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+article{
+    grid-area: article;
+}
+footer{
+    grid-area: footer;
+}
+
+

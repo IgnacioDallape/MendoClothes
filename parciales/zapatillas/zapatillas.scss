@@ -1,0 +1,44 @@
+
+
+.grid__zapatillas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 19rem 3fr 0.5fr;
+    grid-template-areas: "header header"
+        "main article"
+        "footer footer";
+}
+
+
+.zapatillas__boton1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 28.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-image: linear-gradient(to left, rgb(172, 161, 161),white);
+    border: solid rgb(96, 82, 82) 3px;
+    position: relative;
+    left: 14.15rem;
+}
+.zapatillas__boton2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 28.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-image: linear-gradient(to left, rgb(172, 161, 161),white);
+    border: solid rgb(96, 82, 82) 3px;
+}
+
+
+.zapatillas__contenedorimagen__jordans {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem 10rem 10rem;
+}
+.zapatillas__contenedorimagen__vans {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 19rem 0rem 0rem;
+}

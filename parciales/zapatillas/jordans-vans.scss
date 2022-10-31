@@ -1,0 +1,48 @@
+
+/*  JORDANS  */
+.grid__vans-y-jordans {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 301px 2fr 0.3fr;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+}
+
+.jordans__tamañocontenedor{
+    display: inline;
+    max-width: 30rem;
+    max-height: 37rem;
+}
+
+.jordans__tamañoimagen{
+    height: 24rem;
+    width: 24rem;
+    display: flex;
+    padding-top: 1rem;   
+}
+
+/*  VANS  */
+
+.grid__vans-y-jordans{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 0.3fr;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+}
+
+.vans__tamañocontenedor{
+    display: inline;
+    max-width: 20rem;
+    max-height: 27rem;
+}
+
+.vans__tamañoimagen{
+    height: 14rem;
+    width: 14rem;
+    display: flex;
+    padding-top: 1rem;
+}
+
