@@ -1,0 +1,47 @@
+.main{
+        &__titulos{
+            width: 100%;
+            height: 3rem;
+            font-family: cursive;
+            padding: 0rem 0rem 2rem 0rem;
+            border-radius: 1rem;
+        }
+
+        &__titulospagina {
+            display: inline;
+            justify-content: left;
+            padding: 0.06rem;
+            background-image: linear-gradient(to left, rgb(86, 83, 80), rgb(255, 255, 255));
+            position: relative;
+            left: 3rem;
+            border-radius: 1rem;
+
+        }
+
+        &__textoquienessomos {
+            display: flex;
+            height: 9rem;
+            width: 35rem;
+            font-size: 1.2rem;
+            background-color: rgb(251, 195, 195);
+            flex-direction: column;
+            background-image: linear-gradient(to left, rgb(169, 155, 155), rgb(255, 255, 255), rgb(255, 255, 255));
+            font-family: cursive;
+            position: relative;
+            left: 3rem;
+            border-radius: 1rem;
+        }
+
+        &__imagen {
+            width: 35rem;
+            position: relative;
+            left: 3rem;
+            border: solid black 2px;
+            border-radius: 1rem;
+
+        }
+
+        &__fondo{
+            padding: 0rem 0rem 10rem 0rem;
+        }
+}
