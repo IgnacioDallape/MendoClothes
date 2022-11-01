@@ -6,33 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
     <link rel="shortcut icon" href="./img/LOGOTIPO .jpg">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Rajdhani&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300&family=Nunito:wght@200&family=Peralta&family=Rajdhani&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Changa:wght@200;300&family=Nunito:wght@200&family=Peralta&family=Rajdhani&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
     <div class="grid__formulario">
         <header class="header__opacidad" >
-            <span class="imagen-contenedor " ><a href="../index.html" > <img src="../img/logo/LOGOTIPO LETRA 1.png" alt="LOGO MC"  class="imagen-logo"></a>
+            <span class="header__imagen__contenedor " ><a href="../index.html" > <img src="../img/logo/LOGOTIPO LETRA 1.png" alt="LOGO MC"  class="header__imagen__logo"></a>
             </span>
-            <nav class="header__contenedor-botones">
-            <button class="header__botones"><a href="../index.html" class="color_boton">Inicio</a></button> 
-            <button class="header__botones"> <a href="./remeras.html" class="color_boton">Remeras</a></button>
-            <button class="header__botones"> <a href="./jeans.html" class="color_boton">Jeans</a></button>
-            <button class="header__botones"><a href="./zapatillas.html" class="color_boton">Zapatillas</a></button>
-            <button class="header__botones"><a href="#" class="color_boton">Formulario de Contacto</a></button>
+            <nav class="header__contenedor__botones">
+            <button class="header__botones"><a href="../index.html" class="header__color__boton">Inicio</a></button> 
+            <button class="header__botones"> <a href="./remeras.html" class="header__color__boton">Remeras</a></button>
+            <button class="header__botones"> <a href="./jeans.html" class="header__color__boton">Jeans</a></button>
+            <button class="header__botones"><a href="./zapatillas.html" class="header__color__boton">Zapatillas</a></button>
+            <button class="header__botones"><a href="#" class="header__color__boton">Formulario de Contacto</a></button>
             
             </nav>
         </header >
         
         
         <main>
-            
+            <h2 class="main__contacto__tituloprincipal"> <span class="main__formulario__titulohijo"> FORMULARIO PARA CONTACTARTE!</span></h2>
+
             <div class="main__formulario">
-            <h2 class="main__contacto__tituloprincipal">FORMULARIO PARA CONTACTARTE!</h2>
             <form action="#" method="get" enctype="text/plain"></form>
             <fieldset class="main__formulario__fieldset">
             <ul>
@@ -60,10 +65,10 @@
         
 
                 <li class="main__formulario__cuestionario">            
-                <label for="ubication">Provincia!</label>
+                <label for="ubication">Provincia</label>
                 <input class="main__formulario__cuestionario__input"  type="text" name="ubication" id="ubication" required placeholder="introduzca su Provincia"> 
                 </li>
-
+            
                 <div class="main__formulario__cuestionario__sexo">
                 <span class="main__formulario__span">Sexo</span>
                 </div>
@@ -78,6 +83,14 @@
                 <label for="female">femenino</label>
                 <input type="radio" name="gender" id="female" value="female"> 
                 </div>
+                <div class="main__formulario__cuestionario">
+                    <label for="comment">Comentanos tus dudas!</label>
+                </div>
+
+                <div class="main__formulario__cuestionario">
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                </div>
+
                     
             </ul>
                 <hr>

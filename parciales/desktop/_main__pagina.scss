@@ -10,11 +10,14 @@
         &__titulospagina {
             display: inline;
             justify-content: left;
-            padding: 0.06rem;
-            background-image: linear-gradient(to left, rgb(86, 83, 80), rgb(255, 255, 255));
+            padding: 0.2rem 1rem 0.2rem 1rem;
+            background-image: linear-gradient(to left, #c1b2a4, #fff);
             position: relative;
             left: 3rem;
             border-radius: 1rem;
+            bottom: 1.7rem;
+            border: 1px black solid;
+            font-family: 'Changa', sans-serif;
 
         }
 
@@ -25,11 +28,16 @@
             font-size: 1.2rem;
             background-color: rgb(251, 195, 195);
             flex-direction: column;
-            background-image: linear-gradient(to left, rgb(169, 155, 155), rgb(255, 255, 255), rgb(255, 255, 255));
-            font-family: cursive;
+            background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: bold;
             position: relative;
             left: 3rem;
             border-radius: 1rem;
+            padding: 1rem;
+            line-height: 1.8rem;
+
+
         }
 
         &__imagen {
