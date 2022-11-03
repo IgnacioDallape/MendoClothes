@@ -1,67 +1,91 @@
 @import "../reset.scss";
 @import "../utilitarias.scss";
 
-.header{
-        &__opacidad{
-            background-color: rgb(229, 220, 210);
-            opacity: 0.9;
-            max-height: 15rem;
 
-        }
-        &__imagen__contenedor{
-            display: grid;
-            grid-template-rows: 10rem;
-            justify-content: space-between;
-            align-items: center;
-        }
-        &__imagen__logo{
-            display: flex;
-            justify-content: center;
-            max-width: 10
-            0%;
-            max-height: 100%;
-            animation: aparecer 700ms  ease-in alternate ;
-        }
-                @keyframes aparecer {
-                    0%{
-                        position: relative;
-                        right: 100rem;
+    .header{
+            &__opacidad{
+                background-color: rgb(229, 220, 210);
+                opacity: 0.9;
+                grid-area: 1rem;
+                
+            }
+            &__imagen__contenedor{
+                display: grid;
+                grid-template-rows: 11rem;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &__imagen__logo{
+                display: flex;
+                justify-content: center;
+                max-width: 10
+                0%;
+                max-height: 100%;
+                animation: aparecer 700ms  ease-in alternate ;
+            }
+                    @keyframes aparecer {
+                        0%{
+                            position: relative;
+                            right: 100rem;
+                        }
+                        100%{
+                            position: relative;
+                            right: 0rem;
+                        }
                     }
-                    100%{
-                        position: relative;
-                        right: 0rem;
-                    }
+
+            &__instagram__contenedor{
+                position: relative;
+                left: 87rem;
+                bottom: 9.7rem;
                 }
-        &__contenedor__botones {
-            padding: 2rem 1rem 1rem 1rem;
-            display: flex;
-            position: relative;
-            max-height: 62%;
-            gap: 0.5rem;
-            height: 5rem;
+
+            &__instagram{
+                width: 5rem;
+            }
+            &__wpp__contenedor{
+                position: relative;
+                left: 76rem;
+                bottom: 9rem;
+
+            }
+
+
+            &__wpp{
+                width: 7rem;
+            }
+
             
-        }
-        &__botones{
-            display: flex;
-            position: relative;
-            align-items: center;
-            width: 100%;
-            padding: 0rem 3rem 0rem 3rem;
-            border: solid 2px ;
-            background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
-            border-radius: 1rem;
-            font-family: 'Changa', sans-serif;
-            font-size: large;
-        }
-        &__botones :hover{
-            color: #9b0b0b;
-        }
-        &__color__boton {
-            display: flex;
-            text-decoration: none;
-            color: black;
-            align-items: center;
-            align-content: center;
-        }
-        
-}
+            &__contenedor__botones {
+                padding: 2rem 1rem 1rem 1rem;
+                display: flex;
+                position: relative;
+                max-height: 62%;
+                gap: 0.5rem;
+                height: 5rem;
+                
+            }
+            &__botones{
+                display: flex;
+                position: relative;
+                align-items: center;
+                width: 100%;
+                padding: 0rem 3rem 0rem 3rem;
+                border: solid 2px ;
+                background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
+                border-radius: 1rem;
+                font-family: 'Changa', sans-serif;
+                font-size: unset;
+            }
+            &__botones :hover{
+                color: #9b0b0b;
+            }
+            &__color__boton {
+                display: flex;
+                text-decoration: none;
+                color: black;
+                align-items: center;
+                align-content: center;
+            }
+            
+    }

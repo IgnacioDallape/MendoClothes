@@ -1,25 +1,48 @@
-
+@import "../utilitarias";
 /*  JORDANS  */
 .grid__vans-y-jordans {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 301px 2fr 0.3fr;
+    grid-template-rows: 301px 50px 100px;
     grid-template-areas: "header"
         "main"
         "footer";
 }
-
-.jordans__tamañocontenedor{
+.main__zapatillas__vyj {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9rem;
+}
+.jordans__tamañocontenedor {
     display: inline;
     max-width: 30rem;
     max-height: 37rem;
+    padding: 0.2rem 0.2rem 3rem 0.2rem;
+    background-image: linear-gradient(to top, #c1b2a4, white);
+    border: 1px black solid;
+    border-radius: 1rem;
+    position: relative;
+    left: 7rem;
+    bottom: 13rem;
 }
 
 .jordans__tamañoimagen{
     height: 24rem;
     width: 24rem;
     display: flex;
-    padding-top: 1rem;   
+    border: 1px black solid;
+    border-radius: 1rem;
+
+}
+.main__jordans__span {
+    position: relative;
+    right: 18rem;
+    bottom: 1rem;
+    font-family: 'Changa', sans-serif;
+    line-height: 1rem;
+    font-weight: bold;
+
+
 }
 
 /*  VANS  */
@@ -33,16 +56,32 @@
                         "footer";
 }
 
-.vans__tamañocontenedor{
-    display: inline;
-    max-width: 20rem;
-    max-height: 27rem;
+.vans__tamañocontenedor {
+    /* display: flex; */
+    width: fit-content;
+    height: fit-content;
+    padding: 0.2rem 0.2rem 3rem 0.2rem;
+    background-image: linear-gradient(to top, #c1b2a4, white);
+    border: 1px black solid;
+    border-radius: 1rem;
+    position: relative;
+    left: 7rem;
 }
 
 .vans__tamañoimagen{
-    height: 14rem;
-    width: 14rem;
+    height: 24rem;
+    width: 24rem;
     display: flex;
     padding-top: 1rem;
 }
 
+.main__vans__span {
+    position: relative;
+    bottom: -12rem;
+    right: 18rem;
+    font-family: 'Changa', sans-serif;
+    line-height: 1rem;
+    font-weight: bold;
+
+
+}
