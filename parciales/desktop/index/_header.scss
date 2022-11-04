@@ -1,13 +1,12 @@
-@import "../reset.scss";
-@import "../utilitarias.scss";
+@import "../reset";
+@import "../utilitarias";
 
 
     .header{
-            &__opacidad{
-                background-color: rgb(229, 220, 210);
+            &__opacidad {
+                background-color: #fff;
                 opacity: 0.9;
-                grid-area: 1rem;
-                
+                /* max-width: fit-content; */
             }
             &__imagen__contenedor{
                 display: grid;

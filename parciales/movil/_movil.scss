@@ -1,6 +1,6 @@
-@import "../utilitarias";
-@import "../reset";
-@import "../desktop/header";
+@import "../desktop/reset";
+@import "../desktop/utilitarias";
+@import "../desktop/index/header";
 
 @media (max-width: 768px) {
 
@@ -9,232 +9,371 @@
     .grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 500px 0.5fr 1fr 125px;
-        grid-template-areas: "header"
-                "main"
-                "article"
-                "footer";
+        grid-template-rows: 603px 0.5fr 1.3fr 186px;
+        grid-template-areas:
+            "header"
+            "main"
+            "article"
+            "footer";
     }
     .header{
-    &__opacidad {
+                &__opacidad {
+                    background-color: rgb(255, 255, 255);
+                    opacity: 0.9;
+                    max-width: fit-content;
+
+                }
+
+                &__imagen__logo {
+                    max-width: 100%;
+                    max-height: fit-content;
+                    position: relative;
+                    bottom: 4rem;
+                    animation: aparecer 700ms  ease-in alternate ;
+                    width: 21rem;
+                }
+                @keyframes aparecer {
+                    0%{
+                        position: relative;
+                        right: 100rem;
+                    }
+                    100%{
+                        position: relative;
+                        right: 0rem;
+                    }
+                }
+                &__imagen__contenedor {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                }
+                &__contenedor__botones {
+                    padding: 2rem 1rem 1rem 1rem;
+                    display: flex;
+                    gap: 0.5rem;
+                    flex-wrap: wrap;
+                    position: relative;
+                    bottom: 15rem;
+                    left: 1.4rem;
+                    width: 18rem;
+                }
+                &__botones{
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    width: 100%;
+                    padding: 0rem 3rem 0rem 3rem;
+                    border: solid 2px ;
+                    background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
+                    border-radius: 1rem;
+                    font-family: 'Changa', sans-serif;
+                    font-size: unset;
+                }
+                &__botones :hover{
+                    color: #9b0b0b;
+                }
+                &__color__boton {
+                    display: flex;
+                    text-decoration: none;
+                    color: black;
+                    align-items: center;
+                    align-content: center;
+                }
+                &__instagram__contenedor {
+                    position: relative;
+                    left: 6rem;
+                    bottom: 20.7rem;
+                }
+                &__wpp__contenedor {
+                    position: relative;
+                    left: 4rem;
+                    bottom: 20rem;
+                }
+            }
+            
+}
+
+@media (max-width: 768px) {
+        .main{
+                &__titulospagina {
+                    display: inline;
+                    justify-content: left;
+                    padding: 0.06rem;
+                    background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
+                    position: relative;
+                    left: 5.8rem;
+                }
+                &__textoquienessomos {
+                    display: flex;
+                    height: 26rem;
+                    width: 14rem;
+                    font-size: 1.2rem;
+                    background-color: rgb(251, 195, 195);
+                    flex-direction: column;
+                    background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
+                    font-family: 'Changa', sans-serif;
+                    position: relative;
+                    left: 3.5rem;
+                }
+                &__imagen {
+                    padding-bottom: 0rem;
+                    width: 15rem;
+                    position: relative;
+                    left: 2.7rem;
+                    bottom: 6rem;
+                }
+            }
+}
+
+@media (max-width: 768px) {
+        .article{
+                &__texto__nospresentamos {
+                    font-size: 1.5rem;
+                    max-width: 12rem;
+                    background-image: linear-gradient(to left, #c1b2a4, #fff);
+                    font-family: 'Changa', sans-serif;
+                    border: solid black 1px;
+                    position: relative;
+                    left: 2.5rem;
+                    bottom: 1rem;
+                    top: inherit;
+                }
+
+                &__video__contenedor {
+                    display: flex;
+                    padding: 0.3rem 0rem 0rem 2rem;
+                    max-width: 18rem;
+                    max-height: 30rem;
+                    position: relative;
+                    height: 20rem;
+                    left: 0.5rem;
+                }
+
+                &__titulospagina {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    padding: 0.5rem 1rem 0.5rem 0.5rem;
+                    border-radius: 1rem;
+                    background-image: linear-gradient(to left, #c1b2a4, white);
+                    max-width: 10rem;
+                    position: relative;
+                    top: -2rem;
+                    left: 5.3rem;
+                    border: 2px solid #222121;
+                    font-family: 'Changa', sans-serif;
+                }
+                
+                &__integrantes__contenedor {
+                    display: flex;
+                    flex-direction: column;
+                    background-image: linear-gradient(to left,rgb(193, 178, 164), white);
+                    background-size: cover;
+                    position: relative;
+                    top: 0rem;
+                    left: 4.3rem;
+                    max-width: fit-content;
+                    padding: 0.2rem;
+                            font-family: 'Changa', sans-serif;
+
+
+                }
+                &__integrantes__foto {
+                    max-width: 12rem;
+                    padding: 1rem 1rem 1rem 1rem;
+                    position: relative;
+                    left: 0.2rem;
+                }
+
+                &__textocomollegar {
+                    /* display: flex; */
+                    max-width: 12rem;
+                    font-size: 1.2rem;
+                    background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
+                    font-family: 'Changa', sans-serif;
+                    border: solid black 1px;
+                    /* justify-content: center; */
+                    position: relative;
+                    top: 3rem;
+                    left: 5.3rem;
+                }
+
+                &__mapa__orientacion {
+                    position: relative;
+                    display: flex;
+                    justify-content: flex-start;
+                    padding: 1rem 2rem 2.5rem 1.6rem;
+                    position: relative;
+                    top: 4rem;
+                    left: 1.6rem;
+                    max-width: 17rem;
+                    max-height: 18rem;
+                }
+        }
+    }
+        @media (max-width: 768px) {
+            .footer {
+                background-color: rgb(232, 216, 216);
+                position: relative;
+                opacity: 0.8;
+                max-height: 9rem;
+                top: 2.5rem;
+            }
+            
+        }
+
+/*  REMERAS  */
+
+@media (max-width: 768px) {
+
+
+.grid__remeras {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 603px 4fr 180px;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
+                        overflow-x: hidden;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+article{
+    grid-area: article;
+}
+footer{
+    grid-area: footer;
+}
+
+.main{
+    &__remera__contenedor {
+        border: 4rem solid transparent;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 2rem;
+        column-gap: 1rem;
+        position: relative;
+        right: 3rem;
+    }
+    
+    &__remera {
+        background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);
+        width: 18rem;
+        height: 30rem;
+        padding: 0.3rem 0.3rem 4rem 0.3rem;
+        border: black solid 2px;
+        border-radius: 1rem;
+
+    }
+    &__remera1{
+        position: relative;
+        top: -6rem;
+        right: 0rem;
+        font-family: cursive;
+    }
+    &__remera2 {
+        position: relative;
+        top: -6.5rem;
+        left: 0rem;
+        font-family: cursive;
+        border: solid 4rem blue;
+    }
+    &__remera3{
+        position: relative;
+        top: -6rem;
+        left: 0rem;
+        font-family: cursive;
+    }
+    &__remera4{
+        position: relative;
+        top: -6rem;
+        left: 0rem;
+        font-family: cursive;
+
+    }
+    &__remera5{
+        position: relative;
+        top: -6rem;
+        left: 0rem;
+        font-family: cursive;
+    }
+    &__remera6{
+        position: relative;
+        top: -5.8rem;
+        left: 0rem;
+        font-family: cursive;
+    }
+    &__remera__acomodando{
+        position: relative;
+        left: -0.1rem;
+    }
+
+}
+
+
+.article__remera{
+    position: relative;
+    right: 0rem;
+    top: -6.4rem;
+    font-family: cursive;
+}
+.footer__movil__remera{
+    position: relative;
+    right: 2.5rem;
+    max-height: 9rem;
+
+}
+}
+
+/*  JEANS   */
+@media (max-width: 768px) {
+
+    .grid__jeans {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 544px 4471px 223px;
+        grid-template-areas: "header"
+                "main"
+                "footer";
+        overflow-x: hidden
+    }
+
+    .header__opacidad {
         background-color: rgb(255, 255, 255);
         opacity: 0.9;
         max-width: fit-content;
+        max-height: rem;
     }
-
-    &__imagen__logo {
-        max-width: 100%;
-        max-height: fit-content;
+    .max__height__header{
+        width: inherit;
+        height: inherit;
+    }
+    .imagen-contenedor{
         position: relative;
-        bottom: 8rem;
-        animation: aparecer 700ms  ease-in alternate ;
-        width: 21rem;
-    }
-    @keyframes aparecer {
-        0%{
-            position: relative;
-            right: 100rem;
-        }
-        100%{
-            position: relative;
-            right: 0rem;
-        }
-    }
-    &__imagen__contenedor {
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
-    &__contenedor__botones {
-        padding: 2rem 1rem 1rem 1rem;
-        display: flex;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-        position: relative;
-        bottom: 15rem;
-        left: 1.4rem;
         width: 18rem;
     }
-    &__botones{
+    .main__jeans {
         display: flex;
-        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
-        padding: 0rem 3rem 0rem 3rem;
-        border: solid 2px ;
-        background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
-        border-radius: 1rem;
-        font-family: 'Changa', sans-serif;
-        font-size: unset;
-    }
-    &__botones :hover{
-        color: #9b0b0b;
-    }
-    &__color__boton {
-        display: flex;
-        text-decoration: none;
-        color: black;
-        align-items: center;
-        align-content: center;
-    }
-}
-.main{
-    &__titulospagina {
-        display: inline;
-        justify-content: left;
-        padding: 0.06rem;
-        background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
+        row-gap: 2rem;
+        column-gap: 1rem;
         position: relative;
-        top: 0.3rem;
-        left: 5.8rem;
-    }
-    &__textoquienessomos {
-        display: flex;
-        height: 26rem;
-        width: 14rem;
-        font-size: 1.2rem;
-        background-color: rgb(251, 195, 195);
-        flex-direction: column;
-        background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
-        font-family: 'Changa', sans-serif;
-        position: relative;
-        left: 3.5rem;
-    }
-    &__imagen {
-        padding-bottom: 0rem;
-        width: 15rem;
-        position: relative;
-        left: 2.7rem;
-        bottom: 6rem;
-    }
-}
-.article{
-    &__texto__nospresentamos {
-        font-size: 1.5rem;
-        max-width: 12rem;
-        background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
-        font-family: 'Changa', sans-serif;
-        border: solid black 1px;
-        position: relative;
-        left: 2.5rem;
-        bottom: 1rem;
-    }
-    &__video__contenedor {
-        display: flex;
-        padding: 0.3rem 0rem 0rem 2rem;
-        max-width: 18rem;
-        max-height: 30rem;
-        position: relative;
-        height: 20rem;
-        left: 0.5rem;
-        
-    }
-    &__titulospagina {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        padding: 0.5rem 1rem 0.5rem 0.5rem;
-        border-radius: 1rem;
-        background-image: linear-gradient(to left, #c1b2a4, white);
-        max-width: 10rem;
-        position: relative;
-        top: -2rem;
-        left: 5.3rem;
-        border: 2px solid #222121;
-        font-family: 'Changa', sans-serif;
-
-    }
-    
-    &__integrantes__contenedor {
-        display: flex;
-        flex-direction: column;
-        background-image: linear-gradient(to left,rgb(193, 178, 164), white);
-        background-size: cover;
-        position: relative;
-        top: 0rem;
-        left: 4.3rem;
-        max-width: fit-content;
-        padding: 0.2rem;
-                font-family: 'Changa', sans-serif;
-
-
-    }
-    &__integrantes__foto {
-        max-width: 12rem;
-        padding: 1rem 1rem 1rem 1rem;
-        position: relative;
-        left: 0.2rem;
-    }
-    &__textocomollegar {
-        /* display: flex; */
-        max-width: 12rem;
-        font-size: 1.2rem;
-        background-image: linear-gradient(to left, rgb(193, 178, 164), rgb(255, 255, 255));
-        font-family: 'Changa', sans-serif;
-        border: solid black 1px;
-        /* justify-content: center; */
-        position: relative;
-        top: 3rem;
-        left: 5.3rem;
-    }
-    &__mapa__orientacion {
-        position: relative;
-        display: flex;
-        justify-content: flex-start;
-        padding: 1rem 2rem 2.5rem 1.6rem;
-        position: relative;
-        top: 4rem;
-        left: 1.6rem;
-        max-width: 17rem;
-        max-height: 18rem;
+        right: 4rem;
+        padding-left: 5px;
+        max-width: 19rem;
     }
 
-    .footer {
-        background-color: rgb(232, 216, 216);
-        position: relative;
-        opacity: 0.8;
-        max-height: 6rem;
-        top: 12rem;
-    }
-    
-}
-/*  JEANS   */
-
-.grid__jeans {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 500px 5fr 180px;
-    grid-template-areas: "header"
-            "main"
-            "footer";
-}
-
-.header__opacidad {
-    background-color: rgb(255, 255, 255);
-    opacity: 0.9;
-    max-width: fit-content;
-    /* max-height: 17rem; */
-}
-.imagen-contenedor{
-    position: relative;
-    width: 18rem;
-}
-.main__jeans{
-    border: 4rem solid transparent;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 2rem;
-    column-gap: 1rem;
-    position: relative;
-    /* bottom: 6.1rem; */
-    right: 4rem;
-    padding-left: 5px;
-    }
     .main__jeans__contenedor{
     position: relative;
-    left: 1.2rem;
+    left: 9.2rem;
     }
     .main__jeans__imagenes {
         background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);
@@ -251,12 +390,291 @@
         font-family: cursive;
         width: 10rem;
     }
-.footer {
-    background-color: rgb(232, 216, 216);
-    position: relative;
-    opacity: 0.8;
-    top: 18rem;
-    width: 21rem;
-        
+    .footer__movil__jeans{
+        background-color: #e8d8d8;
+        position: relative;
+        opacity: 0.8;
+        max-height: 9rem;
+        top: 10.5rem;
+        }
+
 }
+
+/*  ZAPATILLAS  */
+@media (max-width: 768px) {
+
+
+            .grid__zapatillas {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 550PX 300px 0.5fr;
+                grid-template-areas: "header header"
+                    "main main"
+                    "footer footer";
+                background-image: url(../img/fondo/ropa-fondo-2.jpg);
+                background-attachment: fixed;
+                background-size: contain;
+                overflow-x: hidden;
+            }
+
+
+
+
+            .zapatillas__boton1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 19.2rem;
+                padding: 1rem 1rem 1rem 1rem;
+                background-image: linear-gradient(to left, #aca1a1, white);
+                border: solid #605252 3px;
+                position: relative;
+                left: 0.1rem;
+                top: 5rem;
+                font-family: 'Changa', sans-serif;
+                font-weight: bold;
+
+            }
+            .zapatillas__boton2 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    width: 19.5rem;
+                    padding: 1rem 1rem 1rem 1rem;
+                    background-image: linear-gradient(to left, #aca1a1, white);
+                    border: solid #605252 3px;
+                    position: relative;
+                    left: -19rem;
+                    top: 20rem;
+                    font-family: 'Changa', sans-serif;
+                    font-weight: bold;
+
+
+            }
+
+
+            .zapatillas__contenedorimagen__jordans {
+                display: flex;
+                justify-content: center;
+                padding: 1rem 1rem 10rem 10rem;
+                position: relative;
+                left: -60.8rem;
+                /* max-height: 33rem; */
+                /* width: 12rem;*/
+                
+            }
+            .zapatillas__contenedorimagen__vans {
+                display: flex;
+                justify-content: center;
+                padding: 1rem 19rem 0rem 0rem;
+                position: relative;
+                left: -1000.8rem;
+                
+            }
+            .footer__movil__zapatillas {
+                position: relative;
+                top: 26rem;
+            }
+}
+
+/*  FORMULARIO   */
+
+@media (max-width: 768px) {
+
+    body{
+        background-image: url(../img/fondo/ropa-fondo-2.jpg);
+        background-attachment:fixed;
+        background-size: cover;
+    }
+            .grid__formulario{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 550px 1400px 130px;
+                grid-template-areas:"header header"
+                                    "main main"
+                                    "footer footer";
+            }
+            header{
+                grid-area: header;
+            }
+            main{
+                grid-area: main;
+                padding-top: 1.9rem;
+            }
+            footer{
+                grid-area: footer;
+            }
+            .main{
+                &__contacto__tituloprincipal{
+                    text-align: center;
+                    padding-bottom: 1 rem;
+                    font-family: 'Changa', sans-serif;
+                    font-size: xx-large;
+                    background-image: linear-gradient(to left, #d7c3ad, #e9e8e3);
+                    border: 2px black solid;
+                    max-width: 17rem;
+                    border-radius: 1rem;
+                    position: relative;
+                    left: 2rem;
+                }
+                &__formulario__titulohijo{
+                    text-decoration: underline;
+                }
+                
+                &__formulario {
+                
+                    padding: 0rem;
+                    position: relative;
+                    background-image: linear-gradient(to left, #d7c3ad, #e9e8e3);
+                    border: 2px black solid;
+                    border-radius: 2rem;
+                    top: 5rem;
+                    
+                }
+                
+                &__formulario__fieldset{
+                    padding: 0rem 0rem 1rem 4rem;
+                    border-radius: 2rem;
+                }
+                
+                &__formulario__cuestionario{
+                    font-family: 'Changa', sans-serif;
+                    padding-top: 0.3rem;
+                }
+                
+                &__formulario__cuestionario__sexo{
+                    position: relative;
+                    font-family: 'Changa', sans-serif;
+                }
+
+                &__formulario__span{
+                    position: relative;
+                }
+                
+                &__formulario__cuestionario__reiniciar{
+                    font-family: 'Changa', sans-serif;
+                    font-weight: bold;
+                }
+                
+                &__formulario__cuestionario__enviar{
+                    font-family: 'Changa', sans-serif;
+                    font-weight: bold;
+
+                }
+                
+            }
+            .footer__movil__formulario{
+                background-color: #e8d8d8;
+                position: relative;
+                opacity: 0.8;
+                max-height: 12rem;
+                top: -1.5rem;
+            }
+}
+
+/*  VANS Y JORDANS  */
+@media (max-width: 768px) {
+    
+            /*  JORDANS  */
+            body{
+                background-image: url(../img/fondo/ropa-fondo-2.jpg);
+                background-attachment:fixed;
+                background-size: cover;
+            }
+            .grid__vans-y-jordans {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 550px 5200px 200px;
+                grid-template-areas: "header"
+                    "main"
+                    "footer";
+                
+            }
+            .main__zapatillas__vyj {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 9rem;
+            }
+            .jordans__tamañocontenedor {
+                display: inline;
+                max-width: fit-content;
+                max-height: fit-content;
+                padding: 0.2rem 0.2rem 3rem 0.2rem;
+                background-image: linear-gradient(to top, #c1b2a4, white);
+                border: 1px black solid;
+                border-radius: 1rem;
+                position: relative;
+                left: 0rem;
+                bottom: -9rem;
+            }
+
+            .jordans__tamañoimagen{
+                height: 20rem;
+                width: 20rem;
+                display: flex;
+                border: 1px black solid;
+                border-radius: 1rem;
+
+            }
+            .main__jordans__span {
+                position: relative;
+                right: 0rem;
+                bottom: 2.5rem;
+                font-family: 'Changa', sans-serif;
+                line-height: 1rem;
+                font-weight: bold;
+
+
+            }
+
+            /*  VANS  */
+
+
+            .vans__tamañocontenedor {
+                height: fit-content;
+                padding: 0.2rem 0.2rem 3rem 0.2rem;
+                background-image: linear-gradient(to top, #c1b2a4, white);
+                border: 1px black solid;
+                border-radius: 1rem;
+                position: relative;
+                left: 0rem;
+                width: 20rem;
+                border-radius: 2rem;
+                
+            }
+
+            .vans__tamañoimagen{
+                height: 20rem;
+                width: 18rem;
+                display: flex;
+                padding-top: 1rem;
+                border-radius: 2rem;
+                position: relative;
+                left: 0.7rem;
+                bottom: 1rem;
+            }
+            .correccion__primer__vans{
+                position: relative;
+                left: -1rem;
+            }
+
+            .main__vans__span {
+                position: relative;
+                bottom: 12rem;
+                right: 0rem;
+                font-family: 'Changa', sans-serif;
+                line-height: 1rem;
+                font-weight: bold;
+
+
+            }
+            .footer__movil__vans{
+                position: relative;
+                height: 10rem;
+                top: -3rem;
+            }
+
+
+
+
 }
