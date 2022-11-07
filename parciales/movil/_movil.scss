@@ -8,7 +8,7 @@
 
     .grid {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         grid-template-rows: 603px 0.5fr 1.3fr 186px;
         grid-template-areas:
             "header"
@@ -18,19 +18,24 @@
     }
     .header{
                 &__opacidad {
-                    background-color: rgb(255, 255, 255);
+                    background-color: #fff;
                     opacity: 0.9;
-                    max-width: fit-content;
+                    max-width: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
 
                 }
 
                 &__imagen__logo {
                     max-width: 100%;
                     max-height: fit-content;
-                    position: relative;
-                    bottom: 4rem;
-                    animation: aparecer 700ms  ease-in alternate ;
-                    width: 21rem;
+                    /* position: relative; */
+                    /* bottom: 4rem; */
+                    animation: aparecer 700ms ease-in alternate;
+                    /* width: 21rem;*/
+                    
                 }
                 @keyframes aparecer {
                     0%{
@@ -54,8 +59,7 @@
                     flex-wrap: wrap;
                     position: relative;
                     bottom: 15rem;
-                    left: 1.4rem;
-                    width: 18rem;
+                    max-width: fit-content;
                 }
                 &__botones{
                     display: flex;
@@ -81,12 +85,12 @@
                 }
                 &__instagram__contenedor {
                     position: relative;
-                    left: 6rem;
-                    bottom: 20.7rem;
+                    left: -2rem;
+                    bottom: 16.3rem;
                 }
                 &__wpp__contenedor {
                     position: relative;
-                    left: 4rem;
+                    left: 2.3rem;
                     bottom: 20rem;
                 }
             }
@@ -95,6 +99,14 @@
 
 @media (max-width: 768px) {
         .main{
+            .flex__column{
+
+            grid-area: main;
+            padding-top: 1.9rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+        }
                 &__titulospagina {
                     display: inline;
                     justify-content: left;
@@ -229,12 +241,11 @@
 
 .grid__remeras {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 603px 4fr 180px;
     grid-template-areas:"header"
                         "main"
                         "footer";
-                        overflow-x: hidden;
 }
 header{
     grid-area: header;
@@ -259,7 +270,6 @@ footer{
         row-gap: 2rem;
         column-gap: 1rem;
         position: relative;
-        right: 3rem;
     }
     
     &__remera {
@@ -325,7 +335,6 @@ footer{
 }
 .footer__movil__remera{
     position: relative;
-    right: 2.5rem;
     max-height: 9rem;
 
 }
@@ -337,7 +346,7 @@ footer{
     .grid__jeans {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 544px 4471px 223px;
+        grid-template-rows: 603px 4471px 223px;
         grid-template-areas: "header"
                 "main"
                 "footer";
@@ -370,6 +379,7 @@ footer{
         padding-left: 5px;
         max-width: 19rem;
     }
+    
 
     .main__jeans__contenedor{
     position: relative;
@@ -407,7 +417,7 @@ footer{
             .grid__zapatillas {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: 550PX 300px 0.5fr;
+                grid-template-rows: 603px 300px 0.5fr;
                 grid-template-areas: "header header"
                     "main main"
                     "footer footer";
@@ -489,7 +499,7 @@ footer{
             .grid__formulario{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: 550px 1400px 130px;
+                grid-template-rows: 603px 1400px 130px;
                 grid-template-areas:"header header"
                                     "main main"
                                     "footer footer";
@@ -584,7 +594,7 @@ footer{
             .grid__vans-y-jordans {
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 550px 5200px 200px;
+                grid-template-rows: 603px 5200px 200px;
                 grid-template-areas: "header"
                     "main"
                     "footer";
