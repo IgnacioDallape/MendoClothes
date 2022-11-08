@@ -1,12 +1,12 @@
 
 /*  JORDANS  */
-.grid__vans-y-jordans {
+.grid__jordans{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 301px 50px 100px;
-    grid-template-areas: "header"
-        "main"
-        "footer";
+    grid-template-rows: 1fr 3fr 0.3fr;
+    grid-template-areas:"header"
+                        "main"
+                        "footer";
 }
 .main__zapatillas__vyj {
     display: flex;
@@ -47,13 +47,14 @@
 
 /*  VANS  */
 
-.grid__vans-y-jordans{
+.grid__vans{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 0.3fr;
-    grid-template-areas:"header"
-                        "main"
-                        "footer";
+    grid-template-rows: 397px 1518px 190px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
 
 .vans__tamañocontenedor {
