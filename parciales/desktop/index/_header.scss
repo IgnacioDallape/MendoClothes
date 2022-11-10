@@ -1,7 +1,30 @@
 @import "../reset";
 @import "../utilitarias";
 
+@media (min-width: 769px) {
 
+    
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.28fr 1fr 0.1fr;
+    grid-template-areas:"header header"
+                        "main article"
+                        "main article"
+                        "footer footer";
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+article{
+    grid-area: article;
+}
+footer{
+    grid-area: footer;
+}
     .header{
             &__opacidad {
                 background-color: #fff;
@@ -17,8 +40,7 @@
             &__imagen__logo{
                 display: flex;
                 justify-content: center;
-                max-width: 10
-                0%;
+                max-width: 100%;
                 max-height: 100%;
                 animation: aparecer 700ms  ease-in alternate ;
             }
@@ -40,7 +62,7 @@
                 }
 
             &__instagram{
-                width: 5rem;
+                width: 4.5rem;
             }
             &__wpp__contenedor{
                 position: relative;
@@ -88,3 +110,4 @@
             }
             
     }
+}

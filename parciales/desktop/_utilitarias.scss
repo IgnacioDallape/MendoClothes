@@ -22,27 +22,7 @@ body{
     background-attachment:fixed;
     background-size: contain;
 }
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.28fr 1fr 0.1fr;
-    grid-template-areas:"header header"
-                        "main article"
-                        "main article"
-                        "footer footer";
-}
-header{
-    grid-area: header;
-}
-main{
-    grid-area: main;
-}
-article{
-    grid-area: article;
-}
-footer{
-    grid-area: footer;
-}
+
 
 .text__decoration__none{
     text-decoration: none;
@@ -51,9 +31,7 @@ footer{
 .font__size__pequeña{
     font-size: 1.15rem;
 }
-.flex{
-    display: flex;
-}
+
 .border__radius{
     border-radius: 1rem;
     border: 1px solid black;
@@ -73,6 +51,4 @@ footer{
     max-height: fit-content;
 }
 
-.max__height__header{
-    height: 20rem;
-}
+
