@@ -125,6 +125,11 @@
             flex-direction: column;
             row-gap: 1rem;
         }
+
+                &__posicion__index{
+                    position: relative;
+                    left: 0rem;
+                }
                 &__titulospagina {
                     display: inline;
                     justify-content: left;
@@ -163,6 +168,12 @@
 
 @media (max-width: 379px) {
         .article{
+
+                &__posicion__index{
+                    position: relative;
+                    left: 0rem;
+                }
+
                 &__texto__nospresentamos {
                     font-size: 1.5rem;
                     max-width: 12rem;
@@ -275,6 +286,7 @@
     grid-template-areas:"header"
                         "main"
                         "footer";
+    overflow-x: hidden;
 }
 header{
     grid-area: header;
@@ -300,6 +312,11 @@ footer{
         column-gap: 1rem;
         position: relative;
     }
+
+    &__remeras{
+        position: relative;
+        left: -6.2rem;
+    }
     
     &__remera {
         background-image: linear-gradient(to bottom, rgb(93, 86, 86), white);
@@ -312,40 +329,45 @@ footer{
     }
     &__remera1{
         position: relative;
-        top: -6rem;
-        right: 0rem;
+        top: -3rem;
+        right: -4rem;
         font-family: cursive;
     }
     &__remera2 {
         position: relative;
-        top: -6.5rem;
-        left: 0rem;
+        top: -3rem;
+        right: -2rem; 
+        left: 5rem;
         font-family: cursive;
         border: solid 4rem blue;
     }
     &__remera3{
         position: relative;
-        top: -6rem;
-        left: 0rem;
+        top: -3rem;
+        right: -2rem;
+        left: 5rem;
         font-family: cursive;
     }
     &__remera4{
         position: relative;
-        top: -6rem;
-        left: 0rem;
+        top: -3rem;
+        right: -4rem;
+        left: 4rem;
         font-family: cursive;
 
     }
     &__remera5{
         position: relative;
-        top: -6rem;
-        left: 0rem;
+        top: -3rem;
+        right: -4rem;
+        left: 5rem;
         font-family: cursive;
     }
     &__remera6{
         position: relative;
-        top: -5.8rem;
-        left: 0rem;
+        top: -3rem;
+        right: -4rem;
+        left: 4rem;
         font-family: cursive;
     }
     &__remera__acomodando{
@@ -358,8 +380,8 @@ footer{
 
 .article__remera{
     position: relative;
-    right: 0rem;
-    top: -6.4rem;
+    top: -3rem;
+        right: -4rem;
     font-family: cursive;
 }
 .footer__movil__remera{
@@ -382,7 +404,7 @@ footer{
                 "footer";
         overflow-x: hidden
     }
-
+    
     
     .max__height__header{
         height: 33rem;
@@ -399,7 +421,7 @@ footer{
         row-gap: 2rem;
         column-gap: 1rem;
         position: relative;
-        right: 4rem;
+        left: -6rem;
         padding-left: 5px;
         max-width: 19rem;
         bottom: 9rem;
@@ -458,7 +480,10 @@ footer{
                 overflow-x: hidden;
             }
 
-
+            .main__zapatillas{
+                position: relative;
+                left: 0.3rem;
+            }
 
 
             .zapatillas__boton1 {
@@ -548,6 +573,12 @@ footer{
                 grid-area: footer;
             }
             .main{
+
+                &__formulario__tamaño{
+                    position: relative;
+                    left: 0rem;
+                }
+
                 &__contacto__tituloprincipal{
                     text-align: center;
                     padding-bottom: 1 rem;
@@ -625,19 +656,27 @@ footer{
                 background-attachment:fixed;
                 background-size: cover;
             }
+
+            .main__zapatillas__jordans{
+                position: relative;
+                left: 0rem;
+            }
+
             .grid__jordans {
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 603px 5200px 200px;
+                grid-template-rows: 603px 4599px 200px;
                 grid-template-areas: "header"
                     "main"
                     "footer";
                 
             }
+            
             .main__zapatillas__vyj {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 9rem;
+                
             }
             .jordans__tamañocontenedor {
                 display: inline;
@@ -663,8 +702,8 @@ footer{
             }
             .main__jordans__span {
                 position: relative;
-                right: 0rem;
-                bottom: 2.5rem;
+                right: -3rem;
+                bottom: -1rem;
                 font-family: 'Changa', sans-serif;
                 line-height: 1rem;
                 font-weight: bold;
@@ -684,6 +723,11 @@ footer{
                     "footer";
                 
             }
+            .main__zapatillas__vans{
+                position: relative;
+                left: 0rem;
+            }
+            
             .vans__tamañocontenedor {
                 height: fit-content;
                 padding: 0.2rem 0.2rem 3rem 0.2rem;
@@ -709,13 +753,14 @@ footer{
             }
             .correccion__primer__vans{
                 position: relative;
-                left: -1rem;
+                left: 0.6rem;
+                top: 0.4rem;
             }
 
             .main__vans__span {
                 position: relative;
-                bottom: 12rem;
-                right: 0rem;
+                bottom: -1rem;
+                right: -4rem;
                 font-family: 'Changa', sans-serif;
                 line-height: 1rem;
                 font-weight: bold;
