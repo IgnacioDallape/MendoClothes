@@ -4,7 +4,7 @@
 .grid__formulario{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 500px 130px;
+    grid-template-rows: 0.5fr 600px 130px;
     grid-template-areas:"header header"
                         "main main"
                         "footer footer";
@@ -20,36 +20,68 @@ footer{
     grid-area: footer;
 }
 .main{
+
+    &__formulario__tamaño{
+        animation-duration: 0.8s;
+        animation-name: slidein;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 5rem;
+
+    }
+    @keyframes slidein {
+        from {
+            margin-right:100rem;
+        }
+        
+        to {
+            margin-right:0rem;
+        }
+    }
+
     &__contacto__tituloprincipal{
         text-align: center;
-        padding-bottom: 1
-        rem;
+        padding:0rem 1rem 0rem 1rem;
         font-family: 'Changa', sans-serif;
         font-size: xx-large;
-        background-image: linear-gradient(to left, #d7c3ad, #e9e8e3);        border: 2px black solid;
-        ;
+        background-image: linear-gradient(to left, #d7c3ad, #e9e8e3);        
+        border: 2px black solid;
         max-width: 30rem;
         border-radius: 1rem;
-        position: relative;
-        left: 34rem;
-    }
-    &__formulario__titulohijo{
-        text-decoration: underline;
-    }
+        
+        }
+        
+        
     
+
+    &__formulario__contenedor__titulo{
+        display: flex;
+        justify-content: center;
+
+    }
+
     &__formulario {
     
         padding: 2rem 0.5rem 0.5rem 0.5rem;
         position: relative;
-        background-image: linear-gradient(to left, #d7c3ad, #e9e8e3);        border: 2px black solid;
         border-radius: 1rem;
+        top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    &__formulario__fieldset{
+        padding: 0rem 4rem 1rem 8rem;
+        border-radius: 1rem;
+        background-image: linear-gradient(to left, #d7c3ad, #e9e8e3);        
+        border: 2px black solid;
+        
         
     }
     
-    &__formulario__fieldset{
-        padding: 0rem 0rem 1rem 4rem;
-        border-radius: 1rem;
-    }
     
     &__formulario__cuestionario{
         font-family: 'Changa', sans-serif;
@@ -77,3 +109,4 @@ footer{
     }
     
 }
+
