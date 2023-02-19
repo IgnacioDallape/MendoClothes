@@ -8,12 +8,16 @@
                         "main"
                         "footer";
 }
+
+
 .main__zapatillas__jordans {
     display: flex;
     flex-wrap: wrap;
-    gap: 11rem;
-    position: relative;
+    gap: 20rem;
+    position: relative; 
     left: -9rem;
+    top: 2rem;
+
 }
 .jordans__tamañocontenedor {
     display: inline;

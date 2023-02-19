@@ -497,6 +497,15 @@ footer{
                 left: 0.3rem;
             }
 
+            .main__zapatillas__jordans {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10rem;
+                position: relative; 
+                left: -9rem;
+                top: 2rem;
+            
+            }
 
             .zapatillas__boton1 {
                 display: flex;
@@ -559,6 +568,8 @@ footer{
                 top: 70rem;
                 height: 10rem;
             }
+
+            
 }
 
 /*  FORMULARIO   */
